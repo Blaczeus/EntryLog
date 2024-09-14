@@ -1,5 +1,6 @@
 const countEl = document.getElementById('count-el');
-const incrementBtn = document.getElementById('increment-btn');
+const incrementBtn = document.getElementById( 'increment-btn' );
+const resetBtn = document.getElementById('reset-btn');
 const logList = document.getElementById('log-list');
 const entries = [];
 
@@ -13,12 +14,17 @@ function updateLog ()
 {
     logList.innerHTML = '';
     
-    // Add each entry to the log list
+    // Adding each entry to the log list
     entries.forEach(entry => {
         const li = document.createElement('li');
         li.textContent = entry;
         logList.appendChild(li);
     });
+}
+
+function reset() {
+    logList.innerHTML = '';
+    entries.length = 0;
 }
 
 updateDisplay();
@@ -36,3 +42,9 @@ function handleIncrement() {
     entries.push(`Entered at ${timeString}`);
     updateLog();
 }
+
+resetBtn.addEventListener('click', () => {
+    reset();
+    count = 0;
+    updateDisplay();
+});

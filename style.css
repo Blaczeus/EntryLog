@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: cursive, 'Arial', sans-serif;
     background-color: #f0f4f8;
     display: flex;
     flex-direction: column;
@@ -27,8 +27,13 @@ h1 {
     margin-bottom: 10px;
 }
 
+.buttons {
+    display: flex;
+    gap: 10em;
+}
+
 button {
-    padding: 10px 20px;
+    padding: 1em 4em;
     font-size: 1rem;
     background-color: #28a745;
     color: white;
@@ -38,8 +43,16 @@ button {
     transition: background-color 0.3s;
 }
 
+button#reset-btn {
+    background-color: orangered;
+}
+
 button:hover {
     background-color: #218838;
+}
+
+button#reset-btn:hover {
+    background-color: rgb(192, 55, 5);
 }
 
 h3 {
@@ -48,8 +61,11 @@ h3 {
 }
 
 #log-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
-    padding: 0;
+    padding: 1em;
 }
 
 #log-list li {
