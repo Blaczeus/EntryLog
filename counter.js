@@ -22,17 +22,16 @@ function updateLog ()
     });
 }
 
-function reset() {
+function reset () 
+{
     logList.innerHTML = '';
     entries.length = 0;
 }
 
 updateDisplay();
 
-incrementBtn.removeEventListener('click', handleIncrement);
-incrementBtn.addEventListener('click', handleIncrement);
-
-function handleIncrement() {
+function handleIncrement () 
+{
     count++;
     updateDisplay();
 
@@ -43,8 +42,43 @@ function handleIncrement() {
     updateLog();
 }
 
+function handleDecrement () 
+{
+    count--;
+    updateDisplay();
+
+    // Record the current time
+    entries.pop();
+    updateLog();
+}
+
+incrementBtn.removeEventListener('click', handleIncrement);
+incrementBtn.addEventListener('click', handleIncrement);
+
 resetBtn.addEventListener('click', () => {
     reset();
     count = 0;
     updateDisplay();
+} );
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.code === 'Space') {
+        event.preventDefault();
+        handleIncrement();
+    }
+    
+    if (event.key === 'Backspace') {
+        event.preventDefault();
+        if ( count > 0 ) {
+            handleDecrement();
+        }
+    }
+    
+    if (event.key === 'Delete') {
+        event.preventDefault();
+        reset();
+        count = 0;
+        updateDisplay();
+    }
 });
+
