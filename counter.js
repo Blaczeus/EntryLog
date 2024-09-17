@@ -47,7 +47,6 @@ function handleDecrement ()
     count--;
     updateDisplay();
 
-    // Record the current time
     entries.pop();
     updateLog();
 }
