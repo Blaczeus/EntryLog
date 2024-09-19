@@ -7,11 +7,36 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    position: relative;
 }
 
 h1 {
     color: #333;
     font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+#clock {
+    font-size: 4em;
+    font-weight: 600;
+    width: auto;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#mode {
+    font-size: 0.5em;
+    vertical-align: super;
+    margin: auto;
 }
 
 #counter-container {

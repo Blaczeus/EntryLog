@@ -26,7 +26,5 @@ Check out the live version of EntryLog here: **[Live Preview Link](https://blacz
 - JavaScript
 
 ## Future Improvements
-
-- Add a reset button to reset the counter.
 - Implement data persistence with local storage.
 - Add charts or graphs to visualize traffic over time.
