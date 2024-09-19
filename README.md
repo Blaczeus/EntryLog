@@ -26,5 +26,7 @@ Check out the live version of EntryLog here: **[Live Preview Link](https://blacz
 - JavaScript
 
 ## Future Improvements
+
+- Complete the time display so that it shows the period (AM/PM)
 - Implement data persistence with local storage.
 - Add charts or graphs to visualize traffic over time.
