@@ -34,8 +34,8 @@ h1 {
 }
 
 #mode {
-    font-size: 0.5em;
-    vertical-align: super;
+    font-size: 0.6em;
+    vertical-align: text-top;
     margin: auto;
 }
 

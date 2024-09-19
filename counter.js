@@ -47,9 +47,8 @@ function updateClock ()
     const formattedTime = formatTime( time );
 
 
-    document.getElementById( 'clock' ).innerHTML = formattedTime[ 0 ];
-    
-    // Come back to this!!!
+    // document.getElementById( 'clock' ).innerHTML = formattedTime[ 0 ];
+    document.getElementById('clock').innerHTML = `${formattedTime[0]} <span id = "mode">${formattedTime[1]}</span>`;
     // document.getElementById( 'mode' ).innerHTML = formattedTime[1];
 }
 

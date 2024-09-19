@@ -6,7 +6,7 @@
 
 - **Live Visitor Counter**: Displays the number of people who have entered the shop.
 - **Timestamp Logging**: Automatically logs the time of each entry.
-- **Reset Counter**: Ability to reset the counter at the end of the day (to be implemented).
+- **Reset Counter**: Ability to reset the counter at the end of the day.
 - **Modern UI**: Clean and responsive design with a user-friendly interface.
 - **Live Preview**: Hosted version of the app to view and interact with.
 
@@ -27,6 +27,6 @@ Check out the live version of EntryLog here: **[Live Preview Link](https://blacz
 
 ## Future Improvements
 
-- Complete the time display so that it shows the period (AM/PM)
-- Implement data persistence with local storage.
-- Add charts or graphs to visualize traffic over time.
+-Complete the time display by showing AM/PM notation.
+-Implement data persistence using local storage to keep track of entries across sessions.- Implement data persistence with local storage.
+-Add charts or graphs to visualize traffic over time.
