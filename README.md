@@ -27,6 +27,5 @@ Check out the live version of EntryLog here: **[Live Preview Link](https://blacz
 
 ## Future Improvements
 
--Complete the time display by showing AM/PM notation.
--Implement data persistence using local storage to keep track of entries across sessions.- Implement data persistence with local storage.
--Add charts or graphs to visualize traffic over time.
+- Implement data persistence using local storage to keep track of entries across sessions.- Implement data persistence with local storage.
+- Add charts or graphs to visualize traffic over time.
